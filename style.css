@@ -1,0 +1,142 @@
+body {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url(bkg1-1200.webp);
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: peachpuff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Eagle Lake", cursive;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  margin: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em auto;
+  max-width: 100%;
+  min-height: 80vh;
+  padding: 2em 1em;
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: -1vh;
+  max-width: 100%;
+  padding: 0.4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(244, 168, 96);
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  margin: 0 auto;
+  row-gap: 1em;
+  margin-top: 4em;
+  width: 18em;
+}
+label {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1em;
+  color: orange;
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  max-width: 70vw;
+  padding: 0.5em 1em;
+  width: 20em;
+}
+
+input[type="radio"] {
+  background-color: salmon;
+}
+
+input[type="radio"]:checked {
+  accent-color: black;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  max-width: 80vw;
+}
+
+button {
+  background-color: rgb(90, 50, 0);
+  border: none;
+  border-radius: 1em;
+  color: white;
+  font-family: "Pathway Extreme", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 0.4em 1.8em 0.5em;
+  margin: 0.2em;
+}
+
+button:hover {
+  background-color: rgb(71, 39, 0);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(63, 35, 0);
+  color: rgb(250, 250, 250);
+}
+
+.popup {
+  backdrop-filter: blur(1em);
+  background-color: rgba(34, 25, 0, 0.5);
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  height: 90vh;
+  left: 5vw;
+  max-width: 90vw;
+  position: fixed;
+  text-align: center;
+  top: 5vh;
+  width: 90vw;
+}
+
+.popup-text {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.show {
+  align-items: center;
+  box-shadow: 0 0 3em 60em rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(bkg1-2400.webp);
+  }
+}
