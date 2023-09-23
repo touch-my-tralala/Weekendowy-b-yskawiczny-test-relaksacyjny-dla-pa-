@@ -1,18 +1,7 @@
-:root {
-  --doc-height: 100%;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  min-height: 120vh; /* fallback for Js load */
-  min-height: var(--doc-height);
-}
-
 body {
   align-items: center;
   background-attachment: fixed;
+  background-color: rgba(255, 68, 0, 0.32);
   background-image: url(bkg1-1200.webp);
   background-position-x: center;
   background-position-y: bottom;
@@ -25,7 +14,7 @@ body {
   justify-content: center;
   letter-spacing: 0.05em;
   max-width: 100vw;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   overflow-x: hidden;
   word-wrap: break-word;
 }
