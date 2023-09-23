@@ -131,6 +131,7 @@ button:active {
 
 .popup-text {
   margin: 0 auto;
+  overflow-y: auto;
   width: 80%;
 }
 
