@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 body {
   align-items: center;
   background-attachment: fixed;
@@ -14,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Eagle Lake", cursive;
-  height: 100%;
   justify-content: center;
   letter-spacing: 0.05em;
   margin: 0;
