@@ -1,7 +1,10 @@
+html {
+  background-color: rgba(255, 68, 0, 0.32);
+}
+
 body {
   align-items: center;
   background-attachment: fixed;
-  background-color: rgba(255, 68, 0, 0.32);
   background-image: url(bkg1-1200.webp);
   background-position-x: center;
   background-position-y: bottom;
