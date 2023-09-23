@@ -55,6 +55,7 @@ form {
   margin: 0 auto;
   row-gap: 1em;
   margin-top: 4em;
+  max-width: 80vw;
   width: 18em;
 }
 label {
@@ -63,10 +64,13 @@ label {
   border-radius: 1em;
   color: orange;
   display: flex;
+  flex-direction: column;
   font-size: 0.9rem;
   justify-content: space-between;
   max-width: 70vw;
-  padding: 0.5em 1em;
+  padding: 1.5em 1em;
+  row-gap: 1em;
+  text-align: center;
   width: 20em;
 }
 
@@ -79,10 +83,13 @@ input[type="radio"]:checked {
 }
 
 .btn-wrapper {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 2em;
   max-width: 80vw;
+  row-gap: 0.5em;
 }
 
 button {
@@ -132,11 +139,16 @@ button:active {
   align-items: center;
   box-shadow: 0 0 3em 60em rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 768px) {
   body {
     background-image: url(bkg1-2400.webp);
+  }
+
+  .btn-wrapper {
+    flex-direction: row;
   }
 }

@@ -3,6 +3,7 @@ const RADIO_BTNS = document.querySelectorAll(".clothes");
 const FORM = document.querySelector("form");
 const POPUP = document.querySelector(".popup");
 const POPUP_TEXT = document.querySelector(".popup-text");
+const CLOSE_POPUP_BTN = document.querySelector(".close-btn");
 
 function result() {
   const text1 =
@@ -10,7 +11,7 @@ function result() {
   const text2 =
     "Ujdzie, jeśli masz ładne nogi, ale to nie jest to, o czym tygryski marzą najbardziej. 😉";
   const text3 =
-    "Jeżeli w dodatku zaprosisz go od razu do sypialni lub na kuchenny blat, to możesz być pewna, że  szybko o tobie nie zapomni. 👍👍👍";
+    "Jeżeli w dodatku zaprosisz go od razu do sypialni lub na kuchenny blat, to możesz być pewna, że  szybko o tobie nie zapomni. \n 👍👍👍";
   const text4 =
     "Niezłe tempo! \n\n Czasem ubranie może się jednak przydać, zwłaszcza gdy przed twoimi drzwiami akurat zaczepi go sąsiadka. \n Poza tym zawsze można je zdjąć lub zerwać, a wielu mężczyzn marzy o pończochach i seksownej mini. 😎";
   const text0 =
@@ -40,13 +41,18 @@ function result() {
   POPUP.classList.toggle("show");
 
   setTimeout(() => {
-    document.body.addEventListener(
+    CLOSE_POPUP_BTN.addEventListener(
       "click",
       () => {
         POPUP.classList.remove("show");
       },
       100
     );
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Escape" || e.code === 27) {
+        POPUP.classList.remove("show");
+      }
+    });
   });
 }
 
